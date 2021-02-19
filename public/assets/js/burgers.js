@@ -14,10 +14,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
         console.log("test");
         // Grabs the id of the element that goes by the name, "id"
         const id = e.target.getAttribute("data-id");
-        const devour = e.target.getAttribute("data-devour");
-
+        const devoured = e.target.getAttribute("data-newdevour");
+        console.log(devoured);
         const devourState = {
-          devoured: devour,
+          devoured: devoured,
         };
 
         fetch(`/api/burgers/${id}`, {
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
           // Check that the response is all good
           // Reload the page so the user can see the new quote
           if (response.ok) {
-            console.log(`burger has been: ${devour}`);
+            console.log(`burger has been: ${devoured}`);
             location.reload("/");
           } else {
             alert("something went wrong!");
@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       // Grabs the value of the textarea that goes by the name, "quote"
       const newBurger = {
         name: document.getElementById("burg").value.trim(),
-        sleepy: document.getElementById("dev").checked,
+        devoured: document.getElementById("devoured").checked,
       };
 
       // Send POST request to create a new quote
@@ -80,14 +80,14 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
   // Set up the event listeners for each delete button
 
-  deleteBurgers.forEach((button) => {
+  deleteBurgerBtn.forEach((button) => {
     button.addEventListener("click", (e) => {
       console.log("test");
       const id = e.target.getAttribute("data-id");
       console.log("delete quote id", id);
 
       // Send the delete request
-      fetch(`/api/cats/${id}`, {
+      fetch(`/api/burgers/${id}`, {
         method: "DELETE",
       }).then((res) => {
         console.log(res);
