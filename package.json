@@ -1,0 +1,25 @@
+{
+  "name": "build-a-burger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benrgross/Build-A-Burger.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/benrgross/Build-A-Burger/issues"
+  },
+  "homepage": "https://github.com/benrgross/Build-A-Burger#readme",
+  "dependencies": {
+    "express-handlebars": "^5.2.1",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.7"
+  }
+}
