@@ -9,4 +9,12 @@ const burger = {
   create(cols, vals, cb) {
     orm.create("burgers", cols, vals, (res) => cb(res));
   },
+  //update a burger
+  update(ObjColVals, condition, cb) {
+    orm.update("cats", condition, (res) => cb(res));
+  },
+  delete(condition, cb) {
+    orm.delete("burgers", condition, (res) => cb(res));
+  },
 };
+module.exports = burger;
