@@ -1,51 +1,48 @@
-<div class="container">
+<div class="container-fluid">
 <div class="row">
   <div class="col-sm-12 col-md-3 col-lg-3"></div>
   <div class="col-sm-12 col-md-6 col-lg-6">
-    <h1>Create And Devour A Burger</h1>
+    <h1 class="text-center">Create And Devour A Burger</h1>
   </div>
   <div class="col-sm-12 col-md-3 col-lg-3"></div>
 </div>
 
-<br><br>
+<br><br><br>
 <div class="row">
-<div class="col-sm-12 col-md-4 col-md-4">
-
-   <h2>Burgers</h2>
-
+<div class="col-sm-12 col-md-4 col-md-4  d-flex justify-content-center">
+<div class="burger-container">
+<h2 class="text-center burger-head shadow">Burgers</h2>
 <ul>
   {{#each burgers}}
   {{#unless devoured}}
   {{> burger/burger-block devoured=true}}
   {{/unless}}
   {{/each}}
+ <h2 class=" shadow-lg burger-bottom "></h2>
 </ul>
 
 </div>
-<div class="col-sm-12 col-md-4 col-md-4">
-<h2>Creat A Burger</h2>
-<form id="create-form">
 
-  <div class="form-group">
-    <label for="burg">Create A Burger</label>
+</div>
+<div class="col-sm-12 col-md-4 col-md-4 form shadow">
+  <br><br>
+<h2 class="text-center">Create A Burger</h2>
+
+<form id="create-form">
+  <div class="form-group text-center">
+   
     <input type="text" id="burg" name="name">
   </div>
-
-  <div class="form-group">
-    <label for="dev">Devour it?</label><br>
-    <input type="radio" name="devoured" value="1" id="devoured" checked> Devoured<br>
-    <input type="radio" name="devoured" value="0" id="not-devoured"> Not Devoured
-  </div>
-
-  <button type="submit">create burger</button>
+  <br>
+  <button id="submitBtn" class="btn btn-danger" type="submit">Make Your Burger!</button>
 </form>
 
 
 
 </div>
-<div class="col-sm-12 col-md-4 col-md-4">
-
-<h2>Devoured Burgers</h2>
+<div class="col-sm-12 col-md-4 col-md-4 d-flex justify-content-center">
+<div class="burger-container">
+<h2 class="text-center burger-head">Devoured Burgers</h2>
 
 <ul>
   {{#each burgers}}
@@ -53,7 +50,11 @@
   {{> burger/burger-block devoured=false}}
   {{/if}}
   {{/each}}
+  <h2 class="burger-bottom"></h2>
 </ul>
+
+</div>
+
 </div>
 </div>
 
