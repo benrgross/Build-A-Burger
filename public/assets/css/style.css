@@ -49,9 +49,25 @@ li {
 .form {
   border: 5px solid orange;
   border-radius: 10px;
+  margin-bottom: 20px;
+  font-size: 25px;
+  color: red;
 }
 
 #submitBtn {
   display: block;
   margin: 0 auto;
+  margin-bottom: 60px;
+  font-size: 24px;
+}
+
+.name {
+  font-size: 34px;
+}
+.jumbotron {
+  background-image: url(https://media.giphy.com/media/KY3H9cExD57HBZ34hb/giphy.gif);
+  /* background-size: 100% 100%; */
+  background-color: orange;
+  color: white;
+  height: 275px;
 }
