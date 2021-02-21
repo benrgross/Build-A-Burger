@@ -3,6 +3,7 @@
 <div class="row">
   <div class="col-sm-12 col-md-1 col-lg-1"></div>
   <div class="col-sm-12 col-md-10 col-lg-10">
+   {{!-- title with gif background  --}}
    <div class="jumbotron text-center">
   <h1 class="display-4">Create A Burger</h1>
 </div>
@@ -12,10 +13,12 @@
 
 <br><br><br>
 <div class="row">
+{{!-- burgers that are not devoured  --}}
 <div class="col-sm-12 col-md-4 col-md-4  d-flex justify-content-center">
 <div class="burger-container">
 <h2 class="text-center burger-head shadow">Burgers</h2>
 <ul>
+  {{!-- logic for adding elements  --}}
   {{#each burgers}}
   {{#unless devoured}}
   {{> burger/burger-block devoured=true}}
@@ -27,6 +30,7 @@
 </div>
 
 </div>
+{{!-- form to create a new bruger  --}}
 <div class="col-sm-12 col-md-4 col-md-4 form shadow">
   <br>
 <h1 class="text-center name">Name Your Burger</h1>
@@ -43,11 +47,13 @@
 
 
 </div>
+{{!-- devoured burgers  --}}
 <div class="col-sm-12 col-md-4 col-md-4 d-flex justify-content-center">
 <div class="burger-container">
 <h2 class="text-center burger-head">Devoured Burgers</h2>
 
 <ul>
+  {{!-- logic to add elements  --}}
   {{#each burgers}}
   {{#if devoured}}
   {{> burger/burger-block devoured=false}}

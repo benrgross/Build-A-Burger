@@ -2,6 +2,8 @@ body {
   background-color: #fde3a7;
   font-family: "Sansita", sans-serif;
 }
+
+/* main container body of content */
 .container {
   margin-left: 10px;
   margin-right: 10px;
@@ -12,6 +14,8 @@ ul {
 h2 {
   font-size: 26px;
 }
+
+/* buger names that appear in either section  */
 li {
   width: 100%;
   padding: 0px;
@@ -21,12 +25,14 @@ li {
   border-radius: 50px;
 }
 
+/* buttons for devour and detete */
 .burger-btn {
   padding: 0px;
   border-radius: 50px 50px 50px 50px;
   width: 100%;
 }
 
+/* top burger bun  */
 .burger-head {
   margin-bottom: 2px;
   background-color: #f3c760;
@@ -34,6 +40,7 @@ li {
   border-radius: 50px 50px 10px 10px;
 }
 
+/* bottom burger bun  */
 .burger-bottom {
   margin-top: 2px;
   background-color: #f3c760;
@@ -42,10 +49,12 @@ li {
   border-radius: 10px 10px 50px 50px;
 }
 
+/* burger container */
 .burger-container {
   width: 250px;
 }
 
+/* create burger form  */
 .form {
   border: 5px solid orange;
   border-radius: 10px;
@@ -60,10 +69,12 @@ li {
   margin-bottom: 60px;
   font-size: 24px;
 }
-
+/* submit burger title  */
 .name {
   font-size: 34px;
 }
+
+/* jumbotron with tile and background gif  */
 .jumbotron {
   background-image: url(https://media.giphy.com/media/KY3H9cExD57HBZ34hb/giphy.gif);
   /* background-size: 100% 100%; */
@@ -72,6 +83,7 @@ li {
   height: 200px;
 }
 
+/* sticky footer  */
 #footer {
   padding: 20px;
   bottom: 0px;

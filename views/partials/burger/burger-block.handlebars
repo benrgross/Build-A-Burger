@@ -1,10 +1,13 @@
+{{!-- li of burgers when crated or devoured  --}}
 <li class="text-center shadow ">
 	{{name}}	
 </li>
+{{!-- if devoured is false add a devour button  --}}
 {{#if devoured}}
 	<button class="devour btn btn-warning burger-btn shadow" data-id="{{id}}" data-newdevour="{{devoured}}">
 		 Devour It </button> 
 	{{/if}}
+	{{!-- if devoured is true add a trash it button  --}}
 	{{#unless devoured}}
 	<button class="deleteBurger burger-btn btn btn-warning shadow " data-id="{{id}}" value="delete">Trash It</button>
 	{{/unless}}

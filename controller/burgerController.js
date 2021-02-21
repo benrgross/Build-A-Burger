@@ -5,6 +5,8 @@ const router = express.Router();
 const burger = require("../models/burger");
 
 // create all the routes
+
+// gets all the burgers from data base when page hit
 router.get("/", (req, res) => {
   burger.selectAll((data) => {
     const hbsObject = {
@@ -15,6 +17,7 @@ router.get("/", (req, res) => {
   });
 });
 
+// posts burgers to the page when created
 router.post("/api/burgers", (req, res) => {
   burger.insertOne(
     ["name", "devoured"],
@@ -25,6 +28,7 @@ router.post("/api/burgers", (req, res) => {
   );
 });
 
+// changes the truth or flase property of the burger when devoured
 router.put("/api/burgers/:id", (req, res) => {
   const condition = `id = ${req.params.id}`;
 
@@ -44,6 +48,7 @@ router.put("/api/burgers/:id", (req, res) => {
   );
 });
 
+// inserts the updated burger to the page
 router.post("api/burgers/:id", (req, res) => {
   burger.insertOne(
     ["name", "devoured"],
@@ -54,6 +59,7 @@ router.post("api/burgers/:id", (req, res) => {
   );
 });
 
+//deletes from data base when selected
 router.delete("/api/burgers/:id", (req, res) => {
   const condition = `id = ${req.params.id}`;
   console.log("condition", condition);
