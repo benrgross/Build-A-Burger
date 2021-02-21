@@ -69,5 +69,14 @@ li {
   /* background-size: 100% 100%; */
   background-color: orange;
   color: white;
-  height: 275px;
+  height: 200px;
+}
+
+#footer {
+  padding: 20px;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  margin-top: 50px;
+  position: fixed;
 }
