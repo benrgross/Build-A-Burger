@@ -6,6 +6,7 @@
 - [Usage](#usage)
 - [Technologies](#technologies)
 - [License](#license)
+- [Acknowledgements](#acknowledgements)
 - [Questions](#questions)
 
 ## Description
@@ -36,6 +37,10 @@ npm modules;
 ## License
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+## Acknowledgements
+
+GIFFY provided the background gif for the title banner.
 
 ## Questions
 
