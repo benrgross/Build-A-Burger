@@ -10,11 +10,13 @@
 
 ## Description
 
-In this resteraunt appliction the user can name a burger, create it, have it show up in the uneaten setion and then choose to devour it. If the user chooses to devour the burger, the burger moves to the devoured section, where use is then presented with the option of trashing it. This application utilizes the MVC paridime to organize the differant components of the application that provide its functionality. The application uses a homegrown ORM, a model js file as a middlware and contoller js file to inderface with the front end. A MySql database was used to build out and run the application locally while Herku and JAWSDB were employed to deploy, host and provide a cloud database for the application. Handlebars is the templating agent and allowed for dynamic rendering of the application to the webpage.
+In this restaurant application the user can name a burger, create it, have it show up in the uneaten section and then choose to devour it. If the user chooses to devour the burger, the burger moves to the devoured section, where user is then presented with the option of trashing it.
+
+This application utilizes the MVC paradigm to organize the different components of the application that provide its functionality. The application uses a homegrown ORM, a model js file as a middleware and controller js file to interface with the front end. A MySql database was used to build out and run the application locally while Heroku and JAWSDB were employed to deploy, host and provide a cloud database for the application. Handlebars is the templating agent.
 
 ## Usage
 
-![alt-text](/public/assets/gif/burger.gif)
+![alt-text](/assets/gif/burger.gif)
 
 find the application at: https://burger-fun.herokuapp.com/
 
