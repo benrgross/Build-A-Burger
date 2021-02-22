@@ -16,7 +16,7 @@ This application utilizes the MVC paradigm to organize the different components 
 
 ## Usage
 
-![alt-text](/assets/gif/burger.gif)
+![alt-text](/public/assets/gif/burger.gif)
 
 find the application at: https://burger-fun.herokuapp.com/
 
